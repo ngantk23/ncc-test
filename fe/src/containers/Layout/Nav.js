@@ -3,9 +3,11 @@ import { SNav } from "./styles";
 
 export default function Nav() {
   const listLink = ["Home", "Services", "News", "Blog", "Contact"];
+  
   return (
     <SNav>
-      <div className="menu">
+      
+      <div className="menu" id="menu">
         {listLink.map((item, ind) => {
           return (
             // eslint-disable-next-line jsx-a11y/anchor-is-valid

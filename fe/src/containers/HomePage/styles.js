@@ -7,6 +7,10 @@ export const SHome = styled.div`
     img {
       max-width: 100%;
     }
+    @media screen and (max-width: 991px) {
+      width: 250px;
+      max-width: 60%;
+    }
   }
   .description {
     background: rgba(239, 239, 239, 1);
@@ -31,6 +35,14 @@ export const SHome = styled.div`
       text-align: center;
       margin: 0 auto;
     }
+    @media screen and (max-width: 991px) {
+      padding: 20px;
+      .header {
+      }
+      .content {
+        max-width: 100%;
+      }
+    }
   }
 `;
 
@@ -38,7 +50,10 @@ export const SListArticles = styled.div`
   display: flex;
   margin-left: -25px;
   margin-right: -25px;
-  .item{
+  .item {
     margin: 0 25px;
+  }
+  @media screen and (max-width: 1199px) {
+    display: block;
   }
 `;

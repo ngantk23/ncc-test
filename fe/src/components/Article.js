@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
 export default function Article({ img, content, title }) {
   return (
     <Styles>
@@ -41,9 +40,28 @@ const Styles = styled.div`
       /* float: left; */
       /* clear: both; */
     }
-    &::after {
-      display: block;
-      content: "";
+  }
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 25px;
+    .title {
+      margin-bottom: 10px;
+    }
+    .content {
+      .img {
+        height: 100px;
+        height: 100px;
+      }
+      .text {
+        font-size: 15px;
+      }
     }
   }
 `;
